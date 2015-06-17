@@ -1,0 +1,247 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Derivadas</title>
+<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<style>
+#center {
+position: absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+margin: auto;
+height: 10%;
+width: 50%;
+box-shadow: 0 0 4px rgba(0,0,0,.3);
+}
+#center2 {
+position: absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+margin: auto;
+height: 25%;
+width: 60%;
+box-shadow: 0 0 4px rgba(0,0,0,.3);
+}
+.fondo1{
+	background-image:url(IMG/fondo%201.jpg);
+	background-repeat:no-repeat;
+	position:fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size: cover;
+	background-size:cover;
+
+}
+.fondo2{
+	background-image:url(IMG/fondo2.jpg);
+	background-repeat:no-repeat;
+	position:fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size: cover;
+	background-size:cover;
+
+}
+.fondo3{
+	background-image: url(IMG/fondo%201.jpg);
+	background-repeat:no-repeat;
+	position:fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size: cover;
+	background-size:cover;
+
+}
+.fondo4{
+	background-image: url(IMG/fondo%201.jpg);
+	background-repeat:no-repeat;
+	position:fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size: cover;
+	background-size:cover;
+
+}
+.fondo5{
+	background-image: (IMG/fondo%201.jpg);
+	background-repeat:no-repeat;
+	position:fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size: cover;
+	background-size:cover;
+
+}
+.fondo6{
+	background-image:url(IMG/fondo%201.jpg);
+	background-repeat:no-repeat;
+	position:fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size: cover;
+	background-size:cover;
+
+}
+div.caja_transp
+{
+	width: 100%-30px;
+	height: 100%-50px;
+	margin: 30px 50px;
+	background-color: #ffffff;
+	border: 1px solid black;
+	opacity: 0.6;
+	font-size: large;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+</style>
+</head> 
+<body> 
+
+<div data-role="page" id="page" class="fondo1" >
+		<div id="principal">
+    
+		<div id="center">
+           <div align="center" data-role="controlgroup" data-type="vertical">
+        	<div style="width:100%; font-size:100%" >
+        		 <center><div> <a href="#page2">
+          <button class="button2" > Derivadas</button></a> </center>
+       		
+       		</div>
+            </div>
+            </div>
+            </div>
+            <div align="right" >
+            <div style="width:10%; font-size:70%" >
+            <input type="button" value="Salir" onclick="window.close()" data-theme="b"/>
+            </div>
+            </div>
+  
+  </div>
+
+
+<div data-role="page" id="page2" class="fondo1" >
+<div style="width:10%; font-size:70%" >
+<div><a href="#page">
+          <button class="button2">Inicio</button></a> </div></center>
+          </div>
+ 			<div id="center2">
+           
+           <div align="center" data-role="controlgroup" data-type="vertical">
+        	<div style="width:100%; font-size:100%" >
+            	 <center><div> <a href="#page3">
+          <button class="button" > Algebraicas </button></a> 
+        		 <center><div> <a href="#page4">
+          <button class="button" > Trigonometricas </button></a> 
+         <a href="#page5">
+          <button class="button">Inversas Trigonometricas</button></a> </div></center>
+       		<center><div> <a href="#page6">
+          <button class="button" >Logaritmicas</button></a> 
+         <a href="#page7">
+          <button class="button">Exponenciales</button></a> </div></center>
+       		</div>
+            </div>
+            </div>
+            </div>
+            
+		</div>
+       
+        
+</div>
+
+	
+    <div data-role="page" id="page3" class="fondo2" >
+     <div>
+         <center>
+         <div style="width:10%; font-size:70%; float:left;"><a href="#page"><button class="button2">Inicio</button></a></div>
+         <div style="width:10%; font-size:70%; float:left;"><a href="#page4"><button class="button2">Siguiente</button></a></div></center>
+         </div>
+          <div class="caja_transp" style="float:left">
+          <center><h3> ALGEBRAICAS </h3></center>
+         <center> En las funciones algebraicas, las operaciones que hay que efectuar con la variable independiente son: 
+          <li> Adicion</li>
+          <li> Sustitucion</li>
+          <li> Multiplicacion</li>
+          <li> Division</li>
+          <li> Potenciacion</li>
+          <li> Radiacion</li> <br>
+          <img src="IMG/imagen.png"> </center>
+             </div>
+          
+          </div>
+          
+     <div data-role="page" id="page4" class="fondo3" >
+     <div>
+         <center><div style="width:10%; font-size:70%; float:left;"><a href="#page3"><button class="button2">Anterior</button></a></div>
+         <div style="width:10%; font-size:70%; float:left;"><a href="#page"><button class="button2">Inicio</button></a></div>
+         <div style="width:10%; font-size:70%; float:left;"><a href="#page5"><button class="button2">Siguiente</button></a></div></center>
+         </div>
+         
+              <div class="caja_transp" style="float:left">
+          <center><h3> TRIGONOMETRICAS </h3></center>
+          
+          <center>En matemáticas, las funciones trigonométricas son las funciones establecidas con el fin de extender la definición de las razones trigonométricas a todos los números reales y complejos.
+Las funciones trigonométricas son de gran importancia en física, astronomía, cartografía, náutica, telecomunicaciones, la representación de fenómenos periódicos, y otras muchas aplicaciones. Son:<br>
+<br>
+
+<h4>Seno:</h4>  <img src="IMG/TRIGONOMETRICAS1.png"><br>
+<h4>Coseno:</h4><img src="IMG/TRIGONOMETRICAS2.png"><br>
+<h4>Tangente: </h4><img src="IMG/TRIGONOMETRICAS3.png"><br>
+<h4>Cotangente: </h4> <img src="IMG/TRIGONOMETRICAS4.png"><br>
+<h4>Secante: </h4> <img src="IMG/TRIGONOMETRICAS5.png"><br>
+<h4>Cosecante: </h4>. <img src="IMG/TRIGONOMETRICAS6.png"><br></center>
+
+          </div>
+          </div>
+          
+      <div data-role="page" id="page5" class="fondo4" >
+  		<div>
+         	<center><div style="width:10%; font-size:70%; float:left;"><a href="#page4"><button class="button2">Anterior</button></a></div>
+         	<div style="width:10%; font-size:70%; float:left;"><a href="#page"><button class="button2">Inicio</button></a></div>
+         	<div style="width:10%; font-size:70%; float:left;"><a href="#page6"><button class="button2">Siguiente</button></a></div></center>
+        </div>
+           <div class="caja_transp" style="float:left">
+          <center><h3>INVERSAS TRIGONOMETRICAS</h3></center>
+          <center>Las funciones trigonométricas inversas son las funciones inversas de lasrazones trigonométricas (seno, coseno y tangente).
+as razones trigonométricas no son funciones biyectivas (1-a-1), por lo que no son invertibles. Para que lo sean, es necesario restringir su dominio y así poder hallar la función inversa.<br>
+<img src="IMG/IMAGEN2.png"></center>
+          </div>
+          </div>
+          
+        <div data-role="page" id="page6" class="fondo6" >
+     <div>
+         <center><div style="width:10%; font-size:70%; float:left;"><a href="#page5"><button class="button2">Anterior</button></a></div>
+         <div style="width:10%; font-size:70%; float:left;"><a href="#page"><button class="button2">Inicio</button></a></div>
+         <div style="width:10%; font-size:70%; float:left;"><a href="#page7"><button class="button2">Siguiente</button></a></div></center>
+         </div>
+         
+          <div class="caja_transp" style="float:left">
+          <center><h3> LOGARITMICAS</h3></center>
+           El logaritmo de un número y es el exponente al cual hay que elevar la base  b  para obtener  a  y.   Esto es,  si  b > 0  y   b  es  diferente  de  cero,   entonces
+
+logb y = x  si y sólo si  y = bx. <br>
+<img src="IMG/imagen3.gif"></center>
+          </div>
+          </div>
+           <div data-role="page" id="page7" class="fondo6" >
+     <div>
+         <center><div style="width:10%; font-size:70%; float:left;"><a href="#page6"><button class="button2">Anterior</button></a></div>
+         <div style="width:10%; font-size:70%; float:left;"><a href="#page"><button class="button2">Inicio</button></a></div></center>
+         </div>
+         
+               <div class="caja_transp" style="float:left">
+          <center><h3> EXPONENCIALES</h3></center>
+
+<center>La derivada de la función exponencial ea igual a la misma función por el logaritmo neperiano de la base y por la derivada del exponente.<br>
+<img src="IMG/imagen4.gif"></center>
+          </div>
+          </div>
+</body>
+</html>
